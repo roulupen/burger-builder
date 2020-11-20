@@ -12,7 +12,6 @@ const Order = (props) => {
     }
 
     const ingredientOutput = ingredients.map(ig => {
-        console.log(ig);
         return <span
                 style={{
                     textTransform: 'capitalize',

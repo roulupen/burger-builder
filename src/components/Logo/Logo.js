@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import burgetLogo from '../../assets/images/burger-logo.png';
 import classes from './Logo.module.css';
@@ -6,7 +7,7 @@ import classes from './Logo.module.css';
 const Logo = (props) => {
     return (
         <div className={classes.Logo} style={{height: props.height}}>
-            <img src={burgetLogo} alt="MyBurger" />
+            <Link to="/"><img src={burgetLogo} alt="MyBurger" /></Link>
         </div>
     );
 };
