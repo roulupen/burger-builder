@@ -3,3 +3,8 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
