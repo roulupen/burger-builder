@@ -54,10 +54,11 @@ export const auth = (email, password, isSignup) => {
             password: password,
             returnSecureToken: true
         };
+        const key = ''; // Your Key
         
-        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyA43ZHaKyFc3QpLuB0HlNrIXbEt2CwhErs';
+        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=' + key;
         if( !isSignup )
-            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyA43ZHaKyFc3QpLuB0HlNrIXbEt2CwhErs';
+            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=' + key;
 
         axios.post(url, authData)
             .then(response => {
