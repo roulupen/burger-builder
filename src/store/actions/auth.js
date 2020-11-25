@@ -54,7 +54,7 @@ export const auth = (email, password, isSignup) => {
             password: password,
             returnSecureToken: true
         };
-        const key = ''; // Your Key
+        const key = process.env.REACT_APP_FIREBASE_API_KEY;
         
         let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=' + key;
         if( !isSignup )
