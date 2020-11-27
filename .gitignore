@@ -24,3 +24,6 @@ yarn-error.log*
 
 # history files
 .history
+.env
+.firebase/hosting.YnVpbGQ.cache
+.firebaserc
